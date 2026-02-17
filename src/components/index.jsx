@@ -1,5 +1,5 @@
 
-import { AboutIndex } from './about/About'
+import { AboutIndex } from './about/about'
 import { ContactIndex } from './contact/contact'
 import { FooterIndex } from './footer/footer'
 
