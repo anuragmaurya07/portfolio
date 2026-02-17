@@ -1,0 +1,92 @@
+/* ---------- HERO IMAGE ---------- */
+.hero-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid #B415FF;
+}
+
+/* ---------- TITLE & SUBTITLE ---------- */
+#titleName {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#subtitle {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ---------- BUTTONS ---------- */
+.hero-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-connect {
+  background-color: #DF8908;
+}
+
+.btn-connect:hover {
+  background: linear-gradient(270deg,#DF8908 50.41%,#B415FF 90.25%);
+}
+
+.btn-resume {
+  background-color: #B415FF;
+}
+
+.btn-resume:hover {
+  background: linear-gradient(270deg,#DF8908 50.41%,#B415FF 90.25%);
+}
+
+/* ---------- TABLET (992px and below) ---------- */
+@media (max-width: 992px) {
+  .hero-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  #titleName {
+    font-size: 36px;
+  }
+
+  #subtitle {
+    font-size: 16px;
+  }
+
+  .hero-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/* ---------- MOBILE (576px and below) ---------- */
+@media (max-width: 576px) {
+  .hero-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  #titleName {
+    font-size: 24px;
+  }
+
+  #subtitle {
+    font-size: 14px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}

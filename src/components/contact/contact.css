@@ -1,0 +1,105 @@
+/* contact.css */
+
+#contact {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#contact-title {
+  text-align: center;
+}
+
+#contact-title h1 {
+  font-size: 2.5rem;
+}
+
+#contact_section {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+/* LEFT SIDE */
+#contact-left {
+  flex: 1;
+}
+
+#contact-left h1 {
+  font-size: 2rem;
+}
+
+#contact-details {
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* RIGHT SIDE (FORM) */
+#contact-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-right input,
+#contact-right textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#contact-submit {
+  padding: 12px;
+  background: #ff5f57;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#contact-submit:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  #contact_section {
+    flex-direction: column;
+  }
+
+  #contact-title h1 {
+    font-size: 2rem;
+  }
+
+  #contact-left h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact {
+    padding: 40px 15px;
+  }
+
+  #contact-title h1 {
+    font-size: 1.6rem;
+  }
+
+  #contact-right input,
+  #contact-right textarea {
+    font-size: 14px;
+  }
+}

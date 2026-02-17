@@ -1,0 +1,96 @@
+#services {
+  padding: 80px 150px;
+  text-align: center;
+}
+
+#srvices-title {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#srvices-title h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+#srvices-title img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#Service-Container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+#service-formet {
+  background: #111;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+#service-formet:hover {
+  transform: scale(1.05);
+}
+
+#service-formet h3 {
+  font-size: 24px;
+  color: #888;
+}
+
+#service-formet h2 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+#service-formet p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#services-readmore {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* ---------- TABLET ---------- */
+@media (max-width: 992px) {
+  #services {
+    padding: 60px 50px;
+  }
+
+  #srvices-title h1 {
+    font-size: 40px;
+  }
+
+  #Service-Container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 576px) {
+  #services {
+    padding: 40px 20px;
+  }
+
+  #srvices-title h1 {
+    font-size: 28px;
+  }
+
+  #Service-Container {
+    grid-template-columns: 1fr;
+  }
+
+  #service-formet {
+    padding: 20px;
+  }
+}
