@@ -1,5 +1,5 @@
 import imanshupic from '../../../src/assets/anu.jpg'
-import pdf from '../../../src/assets/Resume.pdf'
+import pdf from '../../../src/assets/anurag_maurya_frontend.pdf'
 import './hero.css'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
